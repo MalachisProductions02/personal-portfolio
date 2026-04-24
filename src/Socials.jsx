@@ -20,27 +20,27 @@ const ROLES = [
 
 const ITEMS = [
   {
-    id: "twitch", label: "TWITCH", handle: "@yourname", href: "https://twitch.tv/yourname", icon: "🎮", barIcon: icon1, bars: 1, newBars: [0], counts: ["56"],
-    links: ["twitch.tv/videos/2041837265"],
+    id: "twitch", label: "TWITCH", handle: "@doorlesscat2835", href: "https://twitch.tv/doorlesscat2835", icon: "🎮", barIcon: icon1, bars: 1, newBars: [0], counts: ["17"],
+    links: ["twitch.tv/videos/2746702955"],
     stats: [
-      { tag: "FOL", value: "1.2K", color: "#9147ff" },
-      { tag: "VWR", value: "042",  color: "#bf94ff" },
+      { tag: "FOL", value: "48", color: "#9147ff" },
+      { tag: "VWR", value: "010",  color: "#bf94ff" },
     ],
   },
   {
-    id: "instagram", label: "INSTAGRAM", handle: "@yourhandle", href: "https://instagram.com/yourhandle", icon: "📷", barIcon: icon2, bars: 5, newBars: [1, 2], counts: ["3.4M", "2.5M", "676K", "412K", "198K"],
-    links: ["instagram.com/p/C4xQmRrNk2a", "instagram.com/p/C3wLpBsOj7f", "instagram.com/reel/C2vKoArMi6e", "instagram.com/p/C1uJnZqLh5d", "instagram.com/reel/C0tImYpKg4c"],
+    id: "instagram", label: "INSTAGRAM", handle: "@dmx_doorless", href: "https://instagram.com/dmx_doorless", icon: "📷", barIcon: icon2, bars: 5, newBars: [1, 2], counts: ["85", "88", "125", "158", "267"],
+    links: ["instagram.com/p/DXLsZC3kX6Q", "instagram.com/p/DWf7D-NEbWT", "instagram.com/reel/DUcKYSdDQpI", "instagram.com/p/DUcKO7njVs9", "instagram.com/reel/Cp-mtKtgE7J"],
     stats: [
-      { tag: "FOL", value: "3.4K", color: "#e1306c" },
-      { tag: "PST", value: "128",  color: "#f77737" },
+      { tag: "FOL", value: "121", color: "#e1306c" },
+      { tag: "PST", value: "18",  color: "#f77737" },
     ],
   },
   {
-    id: "tiktok", label: "TIKTOK", handle: "@yourhandle", href: "https://tiktok.com/@yourhandle", icon: "🎵", barIcon: icon3, bars: 7, newBars: [0, 3, 5, 6], counts: ["5.1M", "3.7M", "2.2M", "1.4M", "831K", "490K", "217K"],
-    links: ["tiktok.com/@yourhandle/video/7318492016374859054", "tiktok.com/@yourhandle/video/7305837261940183342", "tiktok.com/@yourhandle/video/7291046385720348974", "tiktok.com/@yourhandle/video/7278392047163820334", "tiktok.com/@yourhandle/video/7264819203847165742", "tiktok.com/@yourhandle/video/7251047382916430126", "tiktok.com/@yourhandle/video/7237294018463851822"],
+    id: "tiktok", label: "TIKTOK", handle: "@dmx_doorless", href: "https://tiktok.com/@dmx_doorless", icon: "🎵", barIcon: icon3, bars: 7, newBars: [0, 3, 5, 6], counts: ["156", "277", "384", "259", "433", "186", "168"],
+    links: ["tiktok.com/@yourhandle/video/7600262677402832144", "tiktok.com/@yourhandle/video/7522277404530789688", "tiktok.com/@yourhandle/video/7501534831587773702", "tiktok.com/@yourhandle/video/7158682771903270149", "tiktok.com/@yourhandle/video/6789729119815945477", "tiktok.com/@yourhandle/video/7493716818419404087", "tiktok.com/@yourhandle/video/7559372210578689336"],
     stats: [
-      { tag: "FOL", value: "8.9K", color: "#00f2ea" },
-      { tag: "LKS", value: "52K",  color: "#ff0050" },
+      { tag: "FOL", value: "287", color: "#00f2ea" },
+      { tag: "LKS", value: "486",  color: "#ff0050" },
     ],
   },
 ];

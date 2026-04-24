@@ -3,16 +3,37 @@ import { useNavigate } from "react-router-dom";
 
 const ITEMS = [
   { id: "i", badge: "I", title: "EDUCATION", subtitle: "University / Coursework", rank: 3 },
-  { id: "ii", badge: "II", title: "SKILLS", subtitle: "Frontend / Design / UI", rank: 4 },
+  { id: "ii", badge: "II", title: "SKILLS", subtitle: "Frontend / Design / UI", rank: 7 },
   { id: "iii", badge: "III", title: "PROJECTS", subtitle: "Featured Work", rank: 5 },
-  { id: "iv", badge: "IV", title: "EXPERIENCE", subtitle: "Internships / Roles", rank: 2 },
+  { id: "iv", badge: "IV", title: "EXPERIENCE", subtitle: "Internships / Roles", rank: 8 },
 ];
 
 const EDUCATION_ROWS = [
   { index: "01", title: "General Education", status: "Complete" },
-  { index: "02", title: "Computer Science Core", status: "In Progress" },
-  { index: "03", title: "Elective Track", status: "Queued" },
-  { index: "04", title: "Capstone Prep", status: "Pending" },
+  { index: "02", title: "Software Development Core", status: "In Progress" },
+  { index: "03", title: "Game Development Track", status: "Queued" },
+  { index: "04", title: "Full-Stack Project Preparation", status: "Pending" },
+];
+
+const SKILLS_ROWS = [
+  { index: "01", title: "Frontend Development", status: "In Progress" },
+  { index: "02", title: "UI / UX Design", status: "Queued" },
+  { index: "03", title: "Game Development", status: "Pending" },
+  { index: "04", title: "Backend Basics", status: "Advanced" },
+];
+
+const PROJECTS_ROWS = [
+  { index: "01", title: "Web Development", status: "In Progress" },
+  { index: "02", title: "App Development", status: "In Progress" },
+  { index: "03", title: "Game Development", status: "Advanced" },
+  { index: "04", title: "Personal Projects", status: "Advanced" },
+];
+
+const EXPERIENCE_ROWS = [
+  { index: "01", title: "Programming Languages", status: "In Progress" },
+  { index: "02", title: "GameJams & Robotics Events", status: "Advanced" },
+  { index: "03", title: "Linux Knowledge", status: "In Progress" },
+  { index: "04", title: "Creative Projects", status: "Advanced" },
 ];
 
 export default function ResumePage({ src }) {
@@ -440,7 +461,7 @@ export default function ResumePage({ src }) {
             <div className="resume-detail-top">
               <div className="resume-detail-top-index">01</div>
               <div className="resume-detail-top-title">EDUCATION LOG</div>
-              <div className="resume-detail-top-progress">7/5</div>
+              <div className="resume-detail-top-progress">5/10</div>
             </div>
 
             <div className="resume-detail-list">
@@ -456,13 +477,104 @@ export default function ResumePage({ src }) {
             <div className="resume-detail-bottom">
               <div className="resume-detail-bottom-title">DETAILS</div>
               <div className="resume-detail-bullets">
-                <div className="resume-detail-bullet">- Maintain progress across required classes and supporting work.</div>
-                <div className="resume-detail-bullet">- Track portfolio-ready projects tied to coursework and labs.</div>
-                <div className="resume-detail-bullet">- Keep materials prepared for internships, research, and review.</div>
+                <div className="resume-detail-bullet">- Maintain steady progress in programming and development practice.</div>
+                <div className="resume-detail-bullet">- Build and refine projects for portfolio presentation and real-world application.</div>
+                <div className="resume-detail-bullet">- Continuously prepare skills and projects for internships, collaboration, and technical growth.</div>
               </div>
             </div>
           </div>
         )}
+
+
+        {active === 1 && (
+          <div className="resume-detail-panel">
+            <div className="resume-detail-top">
+              <div className="resume-detail-top-index">02</div>
+              <div className="resume-detail-top-title">SKILLS LOG</div>
+              <div className="resume-detail-top-progress">7/10</div>
+            </div>
+
+            <div className="resume-detail-list">
+              {SKILLS_ROWS.map((row) => (
+                <div className="resume-detail-row" key={row.index}>
+                  <div className="resume-detail-row-index">{row.index}</div>
+                  <div className="resume-detail-row-title">{row.title}</div>
+                  <div className="resume-detail-status">{row.status}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="resume-detail-bottom">
+              <div className="resume-detail-bottom-title">DETAILS</div>
+              <div className="resume-detail-bullets">
+                <div className="resume-detail-bullet">- Focused on backend development, system logic, and automation over visual design.</div>
+                <div className="resume-detail-bullet">- Building Discord bots, tools, and gameplay logic systems behind the scenes.</div>
+                <div className="resume-detail-bullet">- Always improving programming logic and structuring scalable solutions.</div>
+              </div>
+            </div>
+          </div>
+        )}
+
+
+        {active === 2 && (
+          <div className="resume-detail-panel">
+            <div className="resume-detail-top">
+              <div className="resume-detail-top-index">01</div>
+              <div className="resume-detail-top-title">PROJECTS LOG</div>
+              <div className="resume-detail-top-progress">6/10</div>
+            </div>
+
+            <div className="resume-detail-list">
+              {PROJECTS_ROWS.map((row) => (
+                <div className="resume-detail-row" key={row.index}>
+                  <div className="resume-detail-row-index">{row.index}</div>
+                  <div className="resume-detail-row-title">{row.title}</div>
+                  <div className="resume-detail-status">{row.status}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="resume-detail-bottom">
+              <div className="resume-detail-bottom-title">DETAILS</div>
+              <div className="resume-detail-bullets">
+                <div className="resume-detail-bullet">- Developed and deployed multiple game jam projects in my country, including a 2nd place ranked submission.</div>
+                <div className="resume-detail-bullet">- Engineered Discord bots with automation, command handling, and system logic.</div>
+                <div className="resume-detail-bullet">- Designed a web-based system for a TCG store, handling catalog and data management.</div>
+              </div>
+            </div>
+          </div>
+        )}
+
+
+        {active === 3 && (
+          <div className="resume-detail-panel">
+            <div className="resume-detail-top">
+              <div className="resume-detail-top-index">01</div>
+              <div className="resume-detail-top-title">EXPERIENCE LOG</div>
+              <div className="resume-detail-top-progress">9/10</div>
+            </div>
+
+            <div className="resume-detail-list">
+              {EXPERIENCE_ROWS.map((row) => (
+                <div className="resume-detail-row" key={row.index}>
+                  <div className="resume-detail-row-index">{row.index}</div>
+                  <div className="resume-detail-row-title">{row.title}</div>
+                  <div className="resume-detail-status">{row.status}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="resume-detail-bottom">
+              <div className="resume-detail-bottom-title">DETAILS</div>
+              <div className="resume-detail-bullets">
+                <div className="resume-detail-bullet">- Integrated local AI systems using Ollama within Discord bots for automated and interactive responses.</div>
+                <div className="resume-detail-bullet">- Experience working with multiple programming languages including Python, C#, C++, C, JavaScript, HTML, and CSS.</div>
+                <div className="resume-detail-bullet">- Configured and managed Linux-based homelab servers for self-hosted services and development environments.</div>
+              </div>
+            </div>
+          </div>
+        )}
+
 
       </div>
 
